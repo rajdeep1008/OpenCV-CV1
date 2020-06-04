@@ -18,3 +18,4 @@ MACRO(add_example name)
 ENDMACRO()
 
 add_example(image_operations)
+add_example(image_mask)
