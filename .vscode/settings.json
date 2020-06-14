@@ -30,7 +30,13 @@
         "utility": "cpp",
         "__config": "cpp",
         "ios": "cpp",
-        "filesystem": "cpp"
+        "filesystem": "cpp",
+        "hash_map": "cpp",
+        "hash_set": "cpp",
+        "queue": "cpp",
+        "stack": "cpp",
+        "__node_handle": "cpp",
+        "*.tcc": "cpp"
     },
     "cmake.configureOnOpen": false,
     "git.ignoreLimitWarning": true
