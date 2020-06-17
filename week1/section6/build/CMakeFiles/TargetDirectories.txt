@@ -1,0 +1,4 @@
+/Users/rajdeep1008/Desktop/opencv-cv1/week1/section6/build/CMakeFiles/rebuild_cache.dir
+/Users/rajdeep1008/Desktop/opencv-cv1/week1/section6/build/CMakeFiles/edit_cache.dir
+/Users/rajdeep1008/Desktop/opencv-cv1/week1/section6/build/CMakeFiles/text_annotation.dir
+/Users/rajdeep1008/Desktop/opencv-cv1/week1/section6/build/CMakeFiles/basic_annotations.dir
