@@ -1223,8 +1223,10 @@ opencv2/videostab/log.hpp
 /Users/rajdeep1008/Desktop/opencv-cv1/installation/OpenCV-4.1.0/include/opencv4/opencv2/videostab/opencv2/videostab/log.hpp
 
 /Users/rajdeep1008/Desktop/opencv-cv1/week1/assignment/code/assignment.cpp
+iostream
+-
 opencv2/opencv.hpp
 -
-vector
+string
 -
 
