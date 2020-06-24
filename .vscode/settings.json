@@ -36,7 +36,10 @@
         "queue": "cpp",
         "stack": "cpp",
         "__node_handle": "cpp",
-        "*.tcc": "cpp"
+        "*.tcc": "cpp",
+        "*.mm": "cpp",
+        "__mutex_base": "cpp",
+        "memory": "cpp"
     },
     "cmake.configureOnOpen": false,
     "git.ignoreLimitWarning": true
