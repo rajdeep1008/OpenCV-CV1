@@ -11,10 +11,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Users/rajdeep1008/Desktop/opencv-cv1/installation/OpenCV-4.1.0/lib/cmake/opencv4/OpenCVConfig.cmake"
   "/Users/rajdeep1008/Desktop/opencv-cv1/installation/OpenCV-4.1.0/lib/cmake/opencv4/OpenCVModules-release.cmake"
   "/Users/rajdeep1008/Desktop/opencv-cv1/installation/OpenCV-4.1.0/lib/cmake/opencv4/OpenCVModules.cmake"
+  "../CMakeLists.txt"
   "CMakeFiles/3.17.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.17.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.17.2/CMakeSystem.cmake"
-  "/Users/rajdeep1008/Desktop/opencv-cv1/week2/section2/code/CMakeLists.txt"
   "/usr/local/Cellar/cmake/3.17.2/share/cmake/Modules/CMakeCInformation.cmake"
   "/usr/local/Cellar/cmake/3.17.2/share/cmake/Modules/CMakeCXXInformation.cmake"
   "/usr/local/Cellar/cmake/3.17.2/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
@@ -55,6 +55,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/mouse_basics.dir/DependInfo.cmake"
-  "CMakeFiles/keyboard_basics.dir/DependInfo.cmake"
+  "CMakeFiles/submission.dir/DependInfo.cmake"
   )

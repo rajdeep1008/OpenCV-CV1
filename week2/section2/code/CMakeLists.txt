@@ -18,3 +18,4 @@ MACRO(add_example name)
 ENDMACRO()
 
 add_example(keyboard_basics)
+add_example(mouse_basics)

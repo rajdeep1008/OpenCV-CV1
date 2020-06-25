@@ -68,10 +68,10 @@ RM = /usr/local/Cellar/cmake/3.17.2/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/rajdeep1008/Desktop/opencv-cv1/week2/section2/code
+CMAKE_SOURCE_DIR = /Users/rajdeep1008/Desktop/opencv-cv1/week2/assignment
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/rajdeep1008/Desktop/opencv-cv1/week2/section2/build
+CMAKE_BINARY_DIR = /Users/rajdeep1008/Desktop/opencv-cv1/week2/assignment/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rajdeep1008/Desktop/opencv-cv1/week2/section2/build/CMakeFiles /Users/rajdeep1008/Desktop/opencv-cv1/week2/section2/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rajdeep1008/Desktop/opencv-cv1/week2/assignment/build/CMakeFiles /Users/rajdeep1008/Desktop/opencv-cv1/week2/assignment/build/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rajdeep1008/Desktop/opencv-cv1/week2/section2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rajdeep1008/Desktop/opencv-cv1/week2/assignment/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -131,84 +131,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named mouse_basics
+# Target rules for targets named submission
 
 # Build rule for target.
-mouse_basics: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mouse_basics
-.PHONY : mouse_basics
+submission: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 submission
+.PHONY : submission
 
 # fast build rule for target.
-mouse_basics/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse_basics.dir/build.make CMakeFiles/mouse_basics.dir/build
-.PHONY : mouse_basics/fast
+submission/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/submission.dir/build.make CMakeFiles/submission.dir/build
+.PHONY : submission/fast
 
-#=============================================================================
-# Target rules for targets named keyboard_basics
+submission.o: submission.cpp.o
 
-# Build rule for target.
-keyboard_basics: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 keyboard_basics
-.PHONY : keyboard_basics
-
-# fast build rule for target.
-keyboard_basics/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyboard_basics.dir/build.make CMakeFiles/keyboard_basics.dir/build
-.PHONY : keyboard_basics/fast
-
-keyboard_basics.o: keyboard_basics.cpp.o
-
-.PHONY : keyboard_basics.o
+.PHONY : submission.o
 
 # target to build an object file
-keyboard_basics.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyboard_basics.dir/build.make CMakeFiles/keyboard_basics.dir/keyboard_basics.cpp.o
-.PHONY : keyboard_basics.cpp.o
+submission.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/submission.dir/build.make CMakeFiles/submission.dir/submission.cpp.o
+.PHONY : submission.cpp.o
 
-keyboard_basics.i: keyboard_basics.cpp.i
+submission.i: submission.cpp.i
 
-.PHONY : keyboard_basics.i
-
-# target to preprocess a source file
-keyboard_basics.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyboard_basics.dir/build.make CMakeFiles/keyboard_basics.dir/keyboard_basics.cpp.i
-.PHONY : keyboard_basics.cpp.i
-
-keyboard_basics.s: keyboard_basics.cpp.s
-
-.PHONY : keyboard_basics.s
-
-# target to generate assembly for a file
-keyboard_basics.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyboard_basics.dir/build.make CMakeFiles/keyboard_basics.dir/keyboard_basics.cpp.s
-.PHONY : keyboard_basics.cpp.s
-
-mouse_basics.o: mouse_basics.cpp.o
-
-.PHONY : mouse_basics.o
-
-# target to build an object file
-mouse_basics.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse_basics.dir/build.make CMakeFiles/mouse_basics.dir/mouse_basics.cpp.o
-.PHONY : mouse_basics.cpp.o
-
-mouse_basics.i: mouse_basics.cpp.i
-
-.PHONY : mouse_basics.i
+.PHONY : submission.i
 
 # target to preprocess a source file
-mouse_basics.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse_basics.dir/build.make CMakeFiles/mouse_basics.dir/mouse_basics.cpp.i
-.PHONY : mouse_basics.cpp.i
+submission.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/submission.dir/build.make CMakeFiles/submission.dir/submission.cpp.i
+.PHONY : submission.cpp.i
 
-mouse_basics.s: mouse_basics.cpp.s
+submission.s: submission.cpp.s
 
-.PHONY : mouse_basics.s
+.PHONY : submission.s
 
 # target to generate assembly for a file
-mouse_basics.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse_basics.dir/build.make CMakeFiles/mouse_basics.dir/mouse_basics.cpp.s
-.PHONY : mouse_basics.cpp.s
+submission.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/submission.dir/build.make CMakeFiles/submission.dir/submission.cpp.s
+.PHONY : submission.cpp.s
 
 # Help Target
 help:
@@ -218,14 +178,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... keyboard_basics"
-	@echo "... mouse_basics"
-	@echo "... keyboard_basics.o"
-	@echo "... keyboard_basics.i"
-	@echo "... keyboard_basics.s"
-	@echo "... mouse_basics.o"
-	@echo "... mouse_basics.i"
-	@echo "... mouse_basics.s"
+	@echo "... submission"
+	@echo "... submission.o"
+	@echo "... submission.i"
+	@echo "... submission.s"
 .PHONY : help
 
 
