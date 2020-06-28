@@ -55,6 +55,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/trackbar_basics.dir/DependInfo.cmake"
   "CMakeFiles/mouse_basics.dir/DependInfo.cmake"
   "CMakeFiles/keyboard_basics.dir/DependInfo.cmake"
   )

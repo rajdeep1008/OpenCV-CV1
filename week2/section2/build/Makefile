@@ -131,6 +131,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named trackbar_basics
+
+# Build rule for target.
+trackbar_basics: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 trackbar_basics
+.PHONY : trackbar_basics
+
+# fast build rule for target.
+trackbar_basics/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/trackbar_basics.dir/build.make CMakeFiles/trackbar_basics.dir/build
+.PHONY : trackbar_basics/fast
+
+#=============================================================================
 # Target rules for targets named mouse_basics
 
 # Build rule for target.
@@ -210,6 +223,33 @@ mouse_basics.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mouse_basics.dir/build.make CMakeFiles/mouse_basics.dir/mouse_basics.cpp.s
 .PHONY : mouse_basics.cpp.s
 
+trackbar_basics.o: trackbar_basics.cpp.o
+
+.PHONY : trackbar_basics.o
+
+# target to build an object file
+trackbar_basics.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/trackbar_basics.dir/build.make CMakeFiles/trackbar_basics.dir/trackbar_basics.cpp.o
+.PHONY : trackbar_basics.cpp.o
+
+trackbar_basics.i: trackbar_basics.cpp.i
+
+.PHONY : trackbar_basics.i
+
+# target to preprocess a source file
+trackbar_basics.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/trackbar_basics.dir/build.make CMakeFiles/trackbar_basics.dir/trackbar_basics.cpp.i
+.PHONY : trackbar_basics.cpp.i
+
+trackbar_basics.s: trackbar_basics.cpp.s
+
+.PHONY : trackbar_basics.s
+
+# target to generate assembly for a file
+trackbar_basics.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/trackbar_basics.dir/build.make CMakeFiles/trackbar_basics.dir/trackbar_basics.cpp.s
+.PHONY : trackbar_basics.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -220,12 +260,16 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... keyboard_basics"
 	@echo "... mouse_basics"
+	@echo "... trackbar_basics"
 	@echo "... keyboard_basics.o"
 	@echo "... keyboard_basics.i"
 	@echo "... keyboard_basics.s"
 	@echo "... mouse_basics.o"
 	@echo "... mouse_basics.i"
 	@echo "... mouse_basics.s"
+	@echo "... trackbar_basics.o"
+	@echo "... trackbar_basics.i"
+	@echo "... trackbar_basics.s"
 .PHONY : help
 
 

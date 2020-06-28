@@ -1,4 +1,5 @@
 /Users/rajdeep1008/Desktop/opencv-cv1/week2/section2/build/CMakeFiles/rebuild_cache.dir
 /Users/rajdeep1008/Desktop/opencv-cv1/week2/section2/build/CMakeFiles/edit_cache.dir
+/Users/rajdeep1008/Desktop/opencv-cv1/week2/section2/build/CMakeFiles/trackbar_basics.dir
 /Users/rajdeep1008/Desktop/opencv-cv1/week2/section2/build/CMakeFiles/mouse_basics.dir
 /Users/rajdeep1008/Desktop/opencv-cv1/week2/section2/build/CMakeFiles/keyboard_basics.dir

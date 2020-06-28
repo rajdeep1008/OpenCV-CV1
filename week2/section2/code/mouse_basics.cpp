@@ -50,5 +50,7 @@ int main(void) {
         }
     }
 
+    destroyWindow("Window");
+
     return 0;
 }
