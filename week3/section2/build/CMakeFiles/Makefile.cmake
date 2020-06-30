@@ -14,7 +14,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.17.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.17.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.17.2/CMakeSystem.cmake"
-  "/Users/rajdeep1008/Desktop/opencv-cv1/vision/code/CMakeLists.txt"
+  "/Users/rajdeep1008/Desktop/opencv-cv1/week3/section2/code/CMakeLists.txt"
   "/usr/local/Cellar/cmake/3.17.2/share/cmake/Modules/CMakeCInformation.cmake"
   "/usr/local/Cellar/cmake/3.17.2/share/cmake/Modules/CMakeCXXInformation.cmake"
   "/usr/local/Cellar/cmake/3.17.2/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
@@ -56,5 +56,4 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/erosion_dilation_basics.dir/DependInfo.cmake"
-  "CMakeFiles/qr_code_detector.dir/DependInfo.cmake"
   )

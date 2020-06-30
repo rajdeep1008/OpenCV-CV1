@@ -68,10 +68,10 @@ RM = /usr/local/Cellar/cmake/3.17.2/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/rajdeep1008/Desktop/opencv-cv1/vision/code
+CMAKE_SOURCE_DIR = /Users/rajdeep1008/Desktop/opencv-cv1/week3/section2/code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/rajdeep1008/Desktop/opencv-cv1/vision/build
+CMAKE_BINARY_DIR = /Users/rajdeep1008/Desktop/opencv-cv1/week3/section2/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rajdeep1008/Desktop/opencv-cv1/vision/build/CMakeFiles /Users/rajdeep1008/Desktop/opencv-cv1/vision/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rajdeep1008/Desktop/opencv-cv1/week3/section2/build/CMakeFiles /Users/rajdeep1008/Desktop/opencv-cv1/week3/section2/build/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rajdeep1008/Desktop/opencv-cv1/vision/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rajdeep1008/Desktop/opencv-cv1/week3/section2/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -143,19 +143,6 @@ erosion_dilation_basics/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/erosion_dilation_basics.dir/build.make CMakeFiles/erosion_dilation_basics.dir/build
 .PHONY : erosion_dilation_basics/fast
 
-#=============================================================================
-# Target rules for targets named qr_code_detector
-
-# Build rule for target.
-qr_code_detector: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 qr_code_detector
-.PHONY : qr_code_detector
-
-# fast build rule for target.
-qr_code_detector/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/qr_code_detector.dir/build.make CMakeFiles/qr_code_detector.dir/build
-.PHONY : qr_code_detector/fast
-
 erosion_dilation_basics.o: erosion_dilation_basics.cpp.o
 
 .PHONY : erosion_dilation_basics.o
@@ -183,33 +170,6 @@ erosion_dilation_basics.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/erosion_dilation_basics.dir/build.make CMakeFiles/erosion_dilation_basics.dir/erosion_dilation_basics.cpp.s
 .PHONY : erosion_dilation_basics.cpp.s
 
-qr_code_detector.o: qr_code_detector.cpp.o
-
-.PHONY : qr_code_detector.o
-
-# target to build an object file
-qr_code_detector.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/qr_code_detector.dir/build.make CMakeFiles/qr_code_detector.dir/qr_code_detector.cpp.o
-.PHONY : qr_code_detector.cpp.o
-
-qr_code_detector.i: qr_code_detector.cpp.i
-
-.PHONY : qr_code_detector.i
-
-# target to preprocess a source file
-qr_code_detector.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/qr_code_detector.dir/build.make CMakeFiles/qr_code_detector.dir/qr_code_detector.cpp.i
-.PHONY : qr_code_detector.cpp.i
-
-qr_code_detector.s: qr_code_detector.cpp.s
-
-.PHONY : qr_code_detector.s
-
-# target to generate assembly for a file
-qr_code_detector.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/qr_code_detector.dir/build.make CMakeFiles/qr_code_detector.dir/qr_code_detector.cpp.s
-.PHONY : qr_code_detector.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -219,13 +179,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... erosion_dilation_basics"
-	@echo "... qr_code_detector"
 	@echo "... erosion_dilation_basics.o"
 	@echo "... erosion_dilation_basics.i"
 	@echo "... erosion_dilation_basics.s"
-	@echo "... qr_code_detector.o"
-	@echo "... qr_code_detector.i"
-	@echo "... qr_code_detector.s"
 .PHONY : help
 
 

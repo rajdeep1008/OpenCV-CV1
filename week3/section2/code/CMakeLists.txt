@@ -17,6 +17,4 @@ MACRO(add_example name)
   TARGET_LINK_LIBRARIES(${name} ${OpenCV_LIBS} )
 ENDMACRO()
 
-add_example(qr_code_detector)
 add_example(erosion_dilation_basics)
-
