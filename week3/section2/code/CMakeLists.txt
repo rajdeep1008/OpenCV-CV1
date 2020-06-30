@@ -18,3 +18,4 @@ MACRO(add_example name)
 ENDMACRO()
 
 add_example(erosion_dilation_basics)
+add_example(erosion_dilation_manual)

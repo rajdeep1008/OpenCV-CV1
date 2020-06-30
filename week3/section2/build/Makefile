@@ -131,6 +131,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named erosion_dilation_manual
+
+# Build rule for target.
+erosion_dilation_manual: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 erosion_dilation_manual
+.PHONY : erosion_dilation_manual
+
+# fast build rule for target.
+erosion_dilation_manual/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/erosion_dilation_manual.dir/build.make CMakeFiles/erosion_dilation_manual.dir/build
+.PHONY : erosion_dilation_manual/fast
+
+#=============================================================================
 # Target rules for targets named erosion_dilation_basics
 
 # Build rule for target.
@@ -170,6 +183,33 @@ erosion_dilation_basics.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/erosion_dilation_basics.dir/build.make CMakeFiles/erosion_dilation_basics.dir/erosion_dilation_basics.cpp.s
 .PHONY : erosion_dilation_basics.cpp.s
 
+erosion_dilation_manual.o: erosion_dilation_manual.cpp.o
+
+.PHONY : erosion_dilation_manual.o
+
+# target to build an object file
+erosion_dilation_manual.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/erosion_dilation_manual.dir/build.make CMakeFiles/erosion_dilation_manual.dir/erosion_dilation_manual.cpp.o
+.PHONY : erosion_dilation_manual.cpp.o
+
+erosion_dilation_manual.i: erosion_dilation_manual.cpp.i
+
+.PHONY : erosion_dilation_manual.i
+
+# target to preprocess a source file
+erosion_dilation_manual.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/erosion_dilation_manual.dir/build.make CMakeFiles/erosion_dilation_manual.dir/erosion_dilation_manual.cpp.i
+.PHONY : erosion_dilation_manual.cpp.i
+
+erosion_dilation_manual.s: erosion_dilation_manual.cpp.s
+
+.PHONY : erosion_dilation_manual.s
+
+# target to generate assembly for a file
+erosion_dilation_manual.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/erosion_dilation_manual.dir/build.make CMakeFiles/erosion_dilation_manual.dir/erosion_dilation_manual.cpp.s
+.PHONY : erosion_dilation_manual.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -179,9 +219,13 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... erosion_dilation_basics"
+	@echo "... erosion_dilation_manual"
 	@echo "... erosion_dilation_basics.o"
 	@echo "... erosion_dilation_basics.i"
 	@echo "... erosion_dilation_basics.s"
+	@echo "... erosion_dilation_manual.o"
+	@echo "... erosion_dilation_manual.i"
+	@echo "... erosion_dilation_manual.s"
 .PHONY : help
 
 

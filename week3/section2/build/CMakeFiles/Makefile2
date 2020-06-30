@@ -73,6 +73,7 @@ CMAKE_BINARY_DIR = /Users/rajdeep1008/Desktop/opencv-cv1/week3/section2/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/erosion_dilation_manual.dir/all
 all: CMakeFiles/erosion_dilation_basics.dir/all
 
 .PHONY : all
@@ -83,9 +84,37 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/erosion_dilation_manual.dir/clean
 clean: CMakeFiles/erosion_dilation_basics.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/erosion_dilation_manual.dir
+
+# All Build rule for target.
+CMakeFiles/erosion_dilation_manual.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/erosion_dilation_manual.dir/build.make CMakeFiles/erosion_dilation_manual.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/erosion_dilation_manual.dir/build.make CMakeFiles/erosion_dilation_manual.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/rajdeep1008/Desktop/opencv-cv1/week3/section2/build/CMakeFiles --progress-num=3,4 "Built target erosion_dilation_manual"
+.PHONY : CMakeFiles/erosion_dilation_manual.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/erosion_dilation_manual.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rajdeep1008/Desktop/opencv-cv1/week3/section2/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/erosion_dilation_manual.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rajdeep1008/Desktop/opencv-cv1/week3/section2/build/CMakeFiles 0
+.PHONY : CMakeFiles/erosion_dilation_manual.dir/rule
+
+# Convenience name for target.
+erosion_dilation_manual: CMakeFiles/erosion_dilation_manual.dir/rule
+
+.PHONY : erosion_dilation_manual
+
+# clean rule for target.
+CMakeFiles/erosion_dilation_manual.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/erosion_dilation_manual.dir/build.make CMakeFiles/erosion_dilation_manual.dir/clean
+.PHONY : CMakeFiles/erosion_dilation_manual.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/erosion_dilation_basics.dir
