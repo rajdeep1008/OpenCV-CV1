@@ -39,7 +39,7 @@ void scale_image(int, void*) {
 }
 
 int main(void) {
-    image = imread("./res/truth.png", IMREAD_COLOR);
+    image = imread("truth.png", IMREAD_COLOR);
 
     namedWindow(window_name, WINDOW_AUTOSIZE);
 
