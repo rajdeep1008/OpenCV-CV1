@@ -1,4 +1,6 @@
-/Users/rajdeep1008/Desktop/opencv-cv1/week3/section2/build/CMakeFiles/rebuild_cache.dir
 /Users/rajdeep1008/Desktop/opencv-cv1/week3/section2/build/CMakeFiles/edit_cache.dir
+/Users/rajdeep1008/Desktop/opencv-cv1/week3/section2/build/CMakeFiles/opening_basics.dir
 /Users/rajdeep1008/Desktop/opencv-cv1/week3/section2/build/CMakeFiles/erosion_dilation_manual.dir
+/Users/rajdeep1008/Desktop/opencv-cv1/week3/section2/build/CMakeFiles/rebuild_cache.dir
+/Users/rajdeep1008/Desktop/opencv-cv1/week3/section2/build/CMakeFiles/closing_basics.dir
 /Users/rajdeep1008/Desktop/opencv-cv1/week3/section2/build/CMakeFiles/erosion_dilation_basics.dir

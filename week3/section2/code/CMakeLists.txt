@@ -19,3 +19,5 @@ ENDMACRO()
 
 add_example(erosion_dilation_basics)
 add_example(erosion_dilation_manual)
+add_example(opening_basics)
+add_example(closing_basics)

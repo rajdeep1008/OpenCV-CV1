@@ -55,6 +55,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/opening_basics.dir/DependInfo.cmake"
   "CMakeFiles/erosion_dilation_manual.dir/DependInfo.cmake"
+  "CMakeFiles/closing_basics.dir/DependInfo.cmake"
   "CMakeFiles/erosion_dilation_basics.dir/DependInfo.cmake"
   )

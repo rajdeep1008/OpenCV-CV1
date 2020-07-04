@@ -76,17 +76,6 @@ CMAKE_BINARY_DIR = /Users/rajdeep1008/Desktop/opencv-cv1/week3/section2/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/Cellar/cmake/3.17.2/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
@@ -97,6 +86,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/local/Cellar/cmake/3.17.2/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -131,6 +131,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named opening_basics
+
+# Build rule for target.
+opening_basics: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 opening_basics
+.PHONY : opening_basics
+
+# fast build rule for target.
+opening_basics/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opening_basics.dir/build.make CMakeFiles/opening_basics.dir/build
+.PHONY : opening_basics/fast
+
+#=============================================================================
 # Target rules for targets named erosion_dilation_manual
 
 # Build rule for target.
@@ -144,6 +157,19 @@ erosion_dilation_manual/fast:
 .PHONY : erosion_dilation_manual/fast
 
 #=============================================================================
+# Target rules for targets named closing_basics
+
+# Build rule for target.
+closing_basics: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 closing_basics
+.PHONY : closing_basics
+
+# fast build rule for target.
+closing_basics/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/closing_basics.dir/build.make CMakeFiles/closing_basics.dir/build
+.PHONY : closing_basics/fast
+
+#=============================================================================
 # Target rules for targets named erosion_dilation_basics
 
 # Build rule for target.
@@ -155,6 +181,33 @@ erosion_dilation_basics: cmake_check_build_system
 erosion_dilation_basics/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/erosion_dilation_basics.dir/build.make CMakeFiles/erosion_dilation_basics.dir/build
 .PHONY : erosion_dilation_basics/fast
+
+closing_basics.o: closing_basics.cpp.o
+
+.PHONY : closing_basics.o
+
+# target to build an object file
+closing_basics.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/closing_basics.dir/build.make CMakeFiles/closing_basics.dir/closing_basics.cpp.o
+.PHONY : closing_basics.cpp.o
+
+closing_basics.i: closing_basics.cpp.i
+
+.PHONY : closing_basics.i
+
+# target to preprocess a source file
+closing_basics.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/closing_basics.dir/build.make CMakeFiles/closing_basics.dir/closing_basics.cpp.i
+.PHONY : closing_basics.cpp.i
+
+closing_basics.s: closing_basics.cpp.s
+
+.PHONY : closing_basics.s
+
+# target to generate assembly for a file
+closing_basics.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/closing_basics.dir/build.make CMakeFiles/closing_basics.dir/closing_basics.cpp.s
+.PHONY : closing_basics.cpp.s
 
 erosion_dilation_basics.o: erosion_dilation_basics.cpp.o
 
@@ -210,6 +263,33 @@ erosion_dilation_manual.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/erosion_dilation_manual.dir/build.make CMakeFiles/erosion_dilation_manual.dir/erosion_dilation_manual.cpp.s
 .PHONY : erosion_dilation_manual.cpp.s
 
+opening_basics.o: opening_basics.cpp.o
+
+.PHONY : opening_basics.o
+
+# target to build an object file
+opening_basics.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opening_basics.dir/build.make CMakeFiles/opening_basics.dir/opening_basics.cpp.o
+.PHONY : opening_basics.cpp.o
+
+opening_basics.i: opening_basics.cpp.i
+
+.PHONY : opening_basics.i
+
+# target to preprocess a source file
+opening_basics.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opening_basics.dir/build.make CMakeFiles/opening_basics.dir/opening_basics.cpp.i
+.PHONY : opening_basics.cpp.i
+
+opening_basics.s: opening_basics.cpp.s
+
+.PHONY : opening_basics.s
+
+# target to generate assembly for a file
+opening_basics.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opening_basics.dir/build.make CMakeFiles/opening_basics.dir/opening_basics.cpp.s
+.PHONY : opening_basics.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -218,14 +298,22 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... closing_basics"
 	@echo "... erosion_dilation_basics"
 	@echo "... erosion_dilation_manual"
+	@echo "... opening_basics"
+	@echo "... closing_basics.o"
+	@echo "... closing_basics.i"
+	@echo "... closing_basics.s"
 	@echo "... erosion_dilation_basics.o"
 	@echo "... erosion_dilation_basics.i"
 	@echo "... erosion_dilation_basics.s"
 	@echo "... erosion_dilation_manual.o"
 	@echo "... erosion_dilation_manual.i"
 	@echo "... erosion_dilation_manual.s"
+	@echo "... opening_basics.o"
+	@echo "... opening_basics.i"
+	@echo "... opening_basics.s"
 .PHONY : help
 
 

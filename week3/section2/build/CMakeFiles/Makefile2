@@ -73,7 +73,9 @@ CMAKE_BINARY_DIR = /Users/rajdeep1008/Desktop/opencv-cv1/week3/section2/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/opening_basics.dir/all
 all: CMakeFiles/erosion_dilation_manual.dir/all
+all: CMakeFiles/closing_basics.dir/all
 all: CMakeFiles/erosion_dilation_basics.dir/all
 
 .PHONY : all
@@ -84,10 +86,39 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/opening_basics.dir/clean
 clean: CMakeFiles/erosion_dilation_manual.dir/clean
+clean: CMakeFiles/closing_basics.dir/clean
 clean: CMakeFiles/erosion_dilation_basics.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/opening_basics.dir
+
+# All Build rule for target.
+CMakeFiles/opening_basics.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opening_basics.dir/build.make CMakeFiles/opening_basics.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opening_basics.dir/build.make CMakeFiles/opening_basics.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/rajdeep1008/Desktop/opencv-cv1/week3/section2/build/CMakeFiles --progress-num=7,8 "Built target opening_basics"
+.PHONY : CMakeFiles/opening_basics.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/opening_basics.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rajdeep1008/Desktop/opencv-cv1/week3/section2/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/opening_basics.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rajdeep1008/Desktop/opencv-cv1/week3/section2/build/CMakeFiles 0
+.PHONY : CMakeFiles/opening_basics.dir/rule
+
+# Convenience name for target.
+opening_basics: CMakeFiles/opening_basics.dir/rule
+
+.PHONY : opening_basics
+
+# clean rule for target.
+CMakeFiles/opening_basics.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/opening_basics.dir/build.make CMakeFiles/opening_basics.dir/clean
+.PHONY : CMakeFiles/opening_basics.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/erosion_dilation_manual.dir
@@ -96,7 +127,7 @@ clean: CMakeFiles/erosion_dilation_basics.dir/clean
 CMakeFiles/erosion_dilation_manual.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/erosion_dilation_manual.dir/build.make CMakeFiles/erosion_dilation_manual.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/erosion_dilation_manual.dir/build.make CMakeFiles/erosion_dilation_manual.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/rajdeep1008/Desktop/opencv-cv1/week3/section2/build/CMakeFiles --progress-num=3,4 "Built target erosion_dilation_manual"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/rajdeep1008/Desktop/opencv-cv1/week3/section2/build/CMakeFiles --progress-num=5,6 "Built target erosion_dilation_manual"
 .PHONY : CMakeFiles/erosion_dilation_manual.dir/all
 
 # Build rule for subdir invocation for target.
@@ -117,13 +148,40 @@ CMakeFiles/erosion_dilation_manual.dir/clean:
 .PHONY : CMakeFiles/erosion_dilation_manual.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/closing_basics.dir
+
+# All Build rule for target.
+CMakeFiles/closing_basics.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/closing_basics.dir/build.make CMakeFiles/closing_basics.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/closing_basics.dir/build.make CMakeFiles/closing_basics.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/rajdeep1008/Desktop/opencv-cv1/week3/section2/build/CMakeFiles --progress-num=1,2 "Built target closing_basics"
+.PHONY : CMakeFiles/closing_basics.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/closing_basics.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rajdeep1008/Desktop/opencv-cv1/week3/section2/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/closing_basics.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rajdeep1008/Desktop/opencv-cv1/week3/section2/build/CMakeFiles 0
+.PHONY : CMakeFiles/closing_basics.dir/rule
+
+# Convenience name for target.
+closing_basics: CMakeFiles/closing_basics.dir/rule
+
+.PHONY : closing_basics
+
+# clean rule for target.
+CMakeFiles/closing_basics.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/closing_basics.dir/build.make CMakeFiles/closing_basics.dir/clean
+.PHONY : CMakeFiles/closing_basics.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/erosion_dilation_basics.dir
 
 # All Build rule for target.
 CMakeFiles/erosion_dilation_basics.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/erosion_dilation_basics.dir/build.make CMakeFiles/erosion_dilation_basics.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/erosion_dilation_basics.dir/build.make CMakeFiles/erosion_dilation_basics.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/rajdeep1008/Desktop/opencv-cv1/week3/section2/build/CMakeFiles --progress-num=1,2 "Built target erosion_dilation_basics"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/rajdeep1008/Desktop/opencv-cv1/week3/section2/build/CMakeFiles --progress-num=3,4 "Built target erosion_dilation_basics"
 .PHONY : CMakeFiles/erosion_dilation_basics.dir/all
 
 # Build rule for subdir invocation for target.
